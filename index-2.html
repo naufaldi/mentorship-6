@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 2fr 1fr;
+        height: auto;
+        gap: 20px 10px;
+      }
+      div {
+        height: 100px;
+      }
+      .image {
+        height: 100%;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+      .caption {
+        height: 100%;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: column;
+      }
+      .footer {
+        height: 100%;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="logo" style="background-color: black">
+        <!-- logo -->
+        LOGO
+      </div>
+      <div class="image" style="background-color: aqua"></div>
+      <div class="caption" style="background-color: bisque">
+        <!-- caption -->
+        <h1>header</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae et
+          ullam fugiat facere fugit fuga nam ratione. Sint dolorem unde illo
+          expedita esse. Quasi libero voluptas voluptatum iusto quisquam nisi.
+        </p>
+        <button>button</button>
+      </div>
+      <div class="footer" style="background-color: green"></div>
+    </div>
+  </body>
+</html>
